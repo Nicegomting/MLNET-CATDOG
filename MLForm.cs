@@ -39,9 +39,9 @@ namespace MLNET
                     if(result.Item1 is null)
                         lblResult.Text = $"알 수 없는 유형입니다.";
                     else if(result.Item1 == true)
-                        lblResult.Text = $"이것은 {result.Item2*100.00:F2}% 떼껄룩 입니다.";
+                        lblResult.Text = $"This is a {result.Item2*100.00:F2}% Cat.";
                     else
-                        lblResult.Text = $"이것은 {result.Item2*100.00:F2}% 댕댕이 입니다.";
+                        lblResult.Text = $"This is a {result.Item2*100.00:F2}% Dog.";
                 }
             }
         }

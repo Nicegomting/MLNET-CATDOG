@@ -33,8 +33,8 @@
             this.txtPath = new System.Windows.Forms.TextBox();
             this.picPreview = new System.Windows.Forms.PictureBox();
             this.lblPreview = new System.Windows.Forms.Label();
-            this.groupBox = new System.Windows.Forms.GroupBox();
             this.lblResult = new System.Windows.Forms.Label();
+            this.groupBox = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).BeginInit();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -54,15 +54,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.Size = new System.Drawing.Size(40, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "이미지";
+            this.label1.Text = "Image";
             // 
             // txtPath
             // 
             this.txtPath.Location = new System.Drawing.Point(59, 18);
             this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(485, 21);
+            this.txtPath.Size = new System.Drawing.Size(485, 23);
             this.txtPath.TabIndex = 2;
             // 
             // picPreview
@@ -80,9 +80,17 @@
             this.lblPreview.AutoSize = true;
             this.lblPreview.Location = new System.Drawing.Point(76, 221);
             this.lblPreview.Name = "lblPreview";
-            this.lblPreview.Size = new System.Drawing.Size(73, 12);
+            this.lblPreview.Size = new System.Drawing.Size(66, 15);
             this.lblPreview.TabIndex = 4;
-            this.lblPreview.Text = "* 미리보기 *";
+            this.lblPreview.Text = "* Preview *";
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(330, 105);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(0, 15);
+            this.lblResult.TabIndex = 5;
             // 
             // groupBox
             // 
@@ -95,14 +103,6 @@
             this.groupBox.TabIndex = 5;
             this.groupBox.TabStop = false;
             // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(330, 105);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 12);
-            this.lblResult.TabIndex = 5;
-            // 
             // MLForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -112,7 +112,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFileSelect);
             this.Controls.Add(this.groupBox);
+            this.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MLForm";
+            this.ShowIcon = false;
             this.Text = "MLForm";
             this.Load += new System.EventHandler(this.MLForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).EndInit();
@@ -130,8 +135,8 @@
         private System.Windows.Forms.TextBox txtPath;
         private System.Windows.Forms.PictureBox picPreview;
         private System.Windows.Forms.Label lblPreview;
-        private System.Windows.Forms.GroupBox groupBox;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.GroupBox groupBox;
     }
 }
 
