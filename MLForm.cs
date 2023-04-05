@@ -37,7 +37,7 @@ namespace MLNET
 
                     var result = IsCATorDOG(txtPath.Text);
                     if(result.Item1 is null)
-                        lblResult.Text = $"알 수 없는 유형입니다.";
+                        lblResult.Text = $"Unknown Type Image";
                     else if(result.Item1 == true)
                         lblResult.Text = $"This is a {result.Item2*100.00:F2}% Cat.";
                     else
